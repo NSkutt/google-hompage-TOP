@@ -1,3 +1,6 @@
+/*Priority To Do List: Add border blur to search; Fix Placement on Google and Searchbar*/
+
+
 * { 
 	margin: 0px;
 	padding: 5px;
@@ -7,7 +10,10 @@
 	}
 a {
 	text-decoration: none;
-	}
+	} 
+	a:hover { 
+		text-decoration: underline;
+		}
 
 body {
 	display: grid;
@@ -41,9 +47,9 @@ body {
 	.nav_left {
 	grid-area:nav_left;
 	background-color: #FFF;
-	/*display: flex;
+	display: flex;
 	align-items: center;
-	*/}
+	}
 	
 	.search {
 	grid-area: search; 
@@ -56,7 +62,7 @@ body {
 	
 		.logo {
 			width: 275px;
-			height: 90px;
+			height: 100px;
 		}
 	
 		.searchbar {
@@ -65,6 +71,11 @@ body {
 			border-radius: 500px;	
 			font-family: ;
 			border-style: solid;
+		} 
+		
+		input:focus { 
+		outline: none;
+		box-shadow: 10px 10px #eee;
 		}
 		
 		.gap { 

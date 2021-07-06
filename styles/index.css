@@ -1,12 +1,13 @@
-/*Priority To Do List: Add border blur to search; Fix Placement on Google and Searchbar*/
+/*Priority To Do List:  Fix Placement on Google and Searchbar; Fix Footer not meeting borders; Fix type font and size*/
 
 
 * { 
 	margin: 0px;
 	padding: 5px;
+	overflow: hidden;
 	box-sizing: border-box; 
 	font-family: "Times New Roman", FreeSerif;
-	font-size: 15px
+	font-size: 16px
 	}
 a {
 	text-decoration: none;
@@ -21,9 +22,9 @@ body {
 	grid-template-columns: 250px 1fr 250px;
 	grid-template-rows: 50px 1fr 1fr 50px;
 	grid-template-areas: 
-	"nav_left . nav_right"
+	"nav_left . nav_right"	
 	". search ."
-	"gap gap gap"
+	". blanks ."
 	"about about about"
 	;
 	}
@@ -71,18 +72,81 @@ body {
 			border-radius: 500px;	
 			font-family: ;
 			border-style: solid;
+			border-width: 1px;
 		} 
-		
-		input:focus { 
-		outline: none;
-		box-shadow: 10px 10px #eee;
-		}
-		
-		.gap { 
-		
-		}
+			
+			input:hover {
+				width: 76%;
+				height: 41px;
+				outline: none;
+				border: none;
+				box-shadow:0 0 1px 1px #EEE;
+				filter:drop-shadow(0 0 1px #DDD);
+				}
+				
+			input:active { 
+				width: 76%;
+				height: 41px;
+				outline: none; 
+				border: none;
+				box-shadow: 0 0 1px 1px #EEE;
+				filter: drop-shadow(0 0 1px #DDD);
+				}
+			
+			input:focus { 
+				width: 76%;
+				height: 41px;
+				outline: none; 
+				border: none;
+				box-shadow: 0 0 1px 1px #EEE;
+				filter: drop-shadow(0 0 1px #DDD);
+				}
+				
+				
+		.blanks { 
+			grid-area: blanks;
+			display: inline-flex;
+			align-items: flex-start;
+			justify-content: center;
+			gap: 12px;
+		} 	
+			button {
+				background-color: #f6f9f6;
+				border: none;
+				width: 125px;
+				height: 37px;
+			}
+			.lucky { width: 130px; }
 		
 		.about {
 			grid-area: about;
 			background-color: #f1f1f1;
+			padding: 0px;
+			border: 0px;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-areas: 
+			"iLeft iCenter iRight"
 		}
+			.infoLeft {
+			grid-area: iLeft;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			} 
+			.infoCenter{ 
+			grid-area: iCenter;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			}
+			.infoRight { 
+			grid-area: iRight;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			}
+			
+			
+			
+			

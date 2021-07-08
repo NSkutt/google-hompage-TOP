@@ -1,16 +1,15 @@
-/*Priority To Do List:  Fix Placement on Google and Searchbar; Fix Footer not meeting borders; Fix type font and size*/
-
 
 * { 
 	margin: 0px;
-	padding: 5px;
+	padding: 0px;
 	overflow: hidden;
 	box-sizing: border-box; 
-	font-family: "Times New Roman", FreeSerif;
-	font-size: 16px
+	font-family:  Arial;
+	font-size: 14px;
 	}
 a {
 	text-decoration: none;
+	padding: 5px;
 	} 
 	a:hover { 
 		text-decoration: underline;
@@ -19,12 +18,13 @@ a {
 body {
 	display: grid;
 	height: 100vh;
+	width: 100vw;
 	grid-template-columns: 250px 1fr 250px;
-	grid-template-rows: 50px 1fr 1fr 50px;
+	grid-template-rows: 50px 1fr 2fr 50px;
 	grid-template-areas: 
 	"nav_left . nav_right"	
 	". search ."
-	". blanks ."
+	". buttons ."
 	"about about about"
 	;
 	}
@@ -35,6 +35,7 @@ body {
 	color: black;
 	display: flex;
 	align-items: center;
+	justify-content: space-evenly;
 	}
 		.signup {
 			width: 100px;
@@ -44,12 +45,40 @@ body {
 			border-radius: 5px;
 			border-style: none
 			}
-		
+			.dotImage {
+			display: grid;
+			grid-column-gap:2px;
+			grid-row-gap:2px;
+			grid-template-columns: 5px 5px 5px;
+			grid-template-rows: 5px 5px 5px;
+			grid-template-areas:
+			"dot1 dot2 dot3"
+			"dot4 dot5 dot6"
+			"dot7 dot8 dot9";
+			}
+			.dot1 {
+			height:4px;
+			width:4px;
+			border-radius:100%;
+			background-color: #666;
+			grid-area: dot1;
+			}
+			.dot2{height:4px; width:4px; border-radius:50%; background-color: #666; grid-area: dot2;}
+			.dot3{height:4px; width:4px; border-radius:50%; background-color: #666; grid-area: dot3;}
+			.dot4{height:4px; width:4px; border-radius:50%; background-color: #666; grid-area: dot4;}
+			.dot5{height:4px; width:4px; border-radius:50%; background-color: #666; grid-area: dot5;}
+			.dot6{height:4px; width:4px; border-radius:50%; background-color: #666; grid-area: dot6;}
+			.dot7{height:4px; width:4px; border-radius:50%; background-color: #666; grid-area: dot7;}
+			.dot8{height:4px; width:4px; border-radius:50%; background-color: #666; grid-area: dot8;}
+			.dot9{height:4px; width:4px; border-radius:50%; background-color: #666; grid-area: dot9;}
+			
 	.nav_left {
 	grid-area:nav_left;
 	background-color: #FFF;
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
+	justify-content: flex-start;
+	padding: 10px;
 	}
 	
 	.search {
@@ -57,7 +86,7 @@ body {
 	background-color: #FFF; 
 	display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 	}
 	
@@ -66,25 +95,29 @@ body {
 			height: 100px;
 		}
 	
-		.searchbar {
+		.container{
 			width: 75%;
-			height: 40px;
+			height: 42px;
 			border-radius: 500px;	
-			font-family: ;
+			border-color: #ddd;
 			border-style: solid;
 			border-width: 1px;
+			display: flex;
+			justify-content: center;
+			align-items: center
 		} 
-			
-			input:hover {
+		.magGlass {color: #AAA }
+			/*After about 4 or 5 days of work on the whole project and getting the below to close to the originals (not quite right still) I finally noticed the instructions said 'ignore hover highlighting'....*/
+			.container:hover {
 				width: 76%;
-				height: 41px;
+				height: 43px;
 				outline: none;
 				border: none;
-				box-shadow:0 0 1px 1px #EEE;
-				filter:drop-shadow(0 0 1px #DDD);
+				box-shadow:0 0 1px 1px #DDE;
+				filter:drop-shadow(0 0 1px 1px #DDD);
 				}
 				
-			input:active { 
+			.container:active { 
 				width: 76%;
 				height: 41px;
 				outline: none; 
@@ -93,7 +126,7 @@ body {
 				filter: drop-shadow(0 0 1px #DDD);
 				}
 			
-			input:focus { 
+			.container:focus { 
 				width: 76%;
 				height: 41px;
 				outline: none; 
@@ -101,15 +134,35 @@ body {
 				box-shadow: 0 0 1px 1px #EEE;
 				filter: drop-shadow(0 0 1px #DDD);
 				}
+			input{ 
+			border: none;
+			outline: none;
+			width: 89%;
+			height: 38px;
+			font-size: 16px;
+			}	
+				input:hover {
+				border:none;
+				outline: none;
+				}
+				input:active{
+				border:none;
+				outline: none;
+				}
+				input:focus{
+				border:none;
+				outline:none;
+				}
 				
-				
-		.blanks { 
-			grid-area: blanks;
+								
+		.luckySearch { 
+			grid-area: buttons;
 			display: inline-flex;
 			align-items: flex-start;
 			justify-content: center;
 			gap: 12px;
-		} 	
+			margin: 20px
+		} 	 	
 			button {
 				background-color: #f6f9f6;
 				border: none;
@@ -121,10 +174,9 @@ body {
 		.about {
 			grid-area: about;
 			background-color: #f1f1f1;
-			padding: 0px;
-			border: 0px;
+			padding: 0;
 			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-columns: 2fr 3fr 2fr;
 			grid-template-areas: 
 			"iLeft iCenter iRight"
 		}
@@ -132,7 +184,7 @@ body {
 			grid-area: iLeft;
 			display: flex;
 			align-items: center;
-			justify-content: space-around;
+			justify-content: space-evenly;
 			} 
 			.infoCenter{ 
 			grid-area: iCenter;
@@ -144,7 +196,7 @@ body {
 			grid-area: iRight;
 			display: flex;
 			align-items: center;
-			justify-content: space-around;
+			justify-content: space-evenly;
 			}
 			
 			

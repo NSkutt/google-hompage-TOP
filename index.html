@@ -6,8 +6,11 @@
 		<meta name="description" content="The Odin Project Google site">
 		<meta name="author" content="NSkutt"> 
 		<link rel="stylesheet" type="text/css" href="styles/index.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 	</head>
 	<body>
+<!--Header Area-->
 		<div class="nav_left">
 			<a href="" style="color: black;">About</a> 
 			<a href="" style="color:black">Store</a>
@@ -15,17 +18,38 @@
 		<div class="nav_right">
 			<a href="" style="color:black;">Gmail</a>
 			<a href="" style="color:black;">Images</a>
-			<p style="font-size: 4px;">weird google thing</p>
+				<!--Google Menu Dots-->
+				<div class="dotImage">
+					<span class="dot1"></span>
+					<span class="dot2"></span>
+					<span class="dot3"></span>
+					<span class="dot4"></span>
+					<span class="dot5"></span>
+					<span class="dot6"></span>
+					<span class="dot7"></span>
+					<span class="dot8"></span>
+					<span class="dot9"></span>
+				</div>
+<!--Finally used the dev tool on the Google Page but can't figure out how the SVG works so I'm using the above workaround for the visual effect-->
 			<a href=""><button class="signup">Sign in</button></a>
 		</div>
+<!--Logo and searchbar-->
 		<div class="search">
 			<img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
-			<input class="searchbar">
+					<div class="container">
+					<!--<div class="magGlass"><img src="https://raw.githubusercontent.com/google/material-design-icons/63c5cb306073a9ecdfd3579f0f696746ab6305f6/src/search/manage_search/materialiconsround/24px.svg"></div-->
+				<div class="magGlass" >
+				<i class="material-icons">search</i>
+				</div>
+					<input class="searchbar"></input>
+					</div>
 			</div>
-			<div class="blanks">
+<!--Buttons-->
+			<div class="luckySearch">
 				<button class="enter">Google Search</button>
 				<button class="lucky">I'm Feeling Lucky</button>
 				</div>
+<!--Footer Area-->
 		<div class="about">
 			<div class="infoLeft"> 
 				<a href="" style="color: #666;">Advertising</a> 
@@ -33,7 +57,8 @@
 				<a href="" style="color:#666;">How search works</a>
 				</div>
 			<div class="infoCenter">
-				<a href="" style="color:#666;">Carbon neutral since 2007</a>
+				<a href="" style="color:#666;"><img height=15 width=10 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC"</img>
+				Carbon neutral since 2007</a>
 				</div>
 			<div class="infoRight">
 				<a href="" style="color:#666;"> Privacy</a>

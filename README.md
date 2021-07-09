@@ -1,4 +1,4 @@
-[WIP file] 
+ 
 This is a project for The Odin Project and should look like the current 
 Google homepage.
 I have gotten even more friendly with searching for answers online and it 

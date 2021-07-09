@@ -12,12 +12,12 @@
 	<body>
 <!--Header Area-->
 		<div class="nav_left">
-			<a href="" style="color: black;">About</a> 
-			<a href="" style="color:black">Store</a>
+			<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiFk97eldTxAhV-IDQIHZCzCioQkNQCCAI&url=https%3A%2F%2Fabout.google%2F%3Ffg%3D1%26utm_source%3Dgoogle-US%26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&usg=AOvVaw13L0SpN0L7ycx9R0_i4R2S" style="color: black;">About</a> 
+			<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiFk97eldTxAhV-IDQIHZCzCioQpMwCCAM&url=https%3A%2F%2Fstore.google.com%2FUS%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-US&usg=AOvVaw0wvkRBURf91YdMQCXOelDf" style="color:black">Store</a>
 			</div>
 		<div class="nav_right">
-			<a href="" style="color:black;">Gmail</a>
-			<a href="" style="color:black;">Images</a>
+			<a href="https://mail.google.com/mail/&ogbl" style="color:black;">Gmail</a>
+			<a href="https://www.google.com/imghp?hl=en&ogbl" style="color:black;">Images</a>
 				<!--Google Menu Dots-->
 				<div class="dotImage">
 					<span class="dot1"></span>
@@ -30,14 +30,17 @@
 					<span class="dot8"></span>
 					<span class="dot9"></span>
 				</div>
-<!--Finally used the dev tool on the Google Page but can't figure out how the SVG works so I'm using the above workaround for the visual effect-->
-			<a href=""><button class="signup">Sign in</button></a>
+<!--Finally used the dev tool on the Google Page but can't figure out how the SVG works so I'm using the above workaround for the visual effect
+Update: figured out Google Materials but they don't seem to have the right one available, so I'm leaving the above in place.-->
+
+			<button class="signup"><a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/%3Fgws_rd%3Dssl&ec=GAZAmgQ" class="signIn">Sign in</a></button>
+<!--This doesn't let the entire button work as the link, but putting the button inside the <a> only had the outer edge of the button seeming to be affected and either way the button state didn't highlight or otherwise change. I'll look into this more on future projects-->
 		</div>
 <!--Logo and searchbar-->
 		<div class="search">
 			<img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
 					<div class="container">
-					<!--<div class="magGlass"><img src="https://raw.githubusercontent.com/google/material-design-icons/63c5cb306073a9ecdfd3579f0f696746ab6305f6/src/search/manage_search/materialiconsround/24px.svg"></div-->
+	
 				<div class="magGlass" >
 				<i class="material-icons">search</i>
 				</div>
@@ -52,17 +55,17 @@
 <!--Footer Area-->
 		<div class="about">
 			<div class="infoLeft"> 
-				<a href="" style="color: #666;">Advertising</a> 
-				<a href="" style="color: #666;">Business</a>
-				<a href="" style="color:#666;">How search works</a>
+				<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiFk97eldTxAhV-IDQIHZCzCioQkdQCCA4&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_us%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw3XLzhicA5ZZW0afDbW0l2T" style="color: #666;">Advertising</a> 
+				<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiFk97eldTxAhV-IDQIHZCzCioQktQCCA8&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K" style="color: #666;">Business</a>
+				<a href="https://google.com/search/howsearchworks/?fg=1" style="color:#666;">How search works</a>
 				</div>
 			<div class="infoCenter">
-				<a href="" style="color:#666;"><img height=15 width=10 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC"</img>
+				<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiFk97eldTxAhV-IDQIHZCzCioQiM8HCBA&url=https%3A%2F%2Fsustainability.google%2Fcommitments%2F%3Futm_source%3Dgooglehpfooter%26utm_medium%3Dhousepromos%26utm_campaign%3Dbottom-footer%26utm_content%3D&usg=AOvVaw33CBu8Ltt2Pn0iagTN2qxC" style="color:#666;"><img height=15 width=10 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC"</img>
 				Carbon neutral since 2007</a>
 				</div>
 			<div class="infoRight">
-				<a href="" style="color:#666;"> Privacy</a>
-				<a href="" style="color:#666;"> Terms</a>
+				<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiFk97eldTxAhV-IDQIHZCzCioQ8awCCBE&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den%26fg%3D1&usg=AOvVaw25lN6TjyY2uszSImdhMejE" style="color:#666;"> Privacy</a>
+				<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiFk97eldTxAhV-IDQIHZCzCioQ8qwCCBI&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den%26fg%3D1&usg=AOvVaw2d8Ahs2oc0jxVOgPfpr4Fe" style="color:#666;"> Terms</a>
 				<a href="" style="color:#666;"> Settings</a>
 				</div>
 		</div>
